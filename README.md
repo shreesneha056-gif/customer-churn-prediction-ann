@@ -1,47 +1,43 @@
-# DataScience_MachineLearning----ANN-ModelBuilding----customer_churn_level_prediction_project
-## 📝 Project Description
-Retaining existing customers is one of the most vital strategies for modern retail banking institutions. This machine learning portfolio project designs, trains, and tunes a deep-learning **Artificial Neural Network (ANN)** script to proactively classify customer churn probabilities based on account balances, credit ratings, geographic positioning, demographics, and product interactions.
+# 📉 Customer Churn Prediction using ANN
 
-To ensure peak deployment stability, the pipeline integrates automated hyperparameter optimization via **Optuna** (`OptunaSearchCV`) combined with `KerasClassifier` wrappers to discover the absolute best combinations of layers, hidden unit weights, and learning speeds.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
----
-
-## 🎯 Model Configuration & Performance Summary
-
-The deep learning classifier processes customer features to partition exit outcomes. Below is the primary operational outline of the trained model layer layout:
-
-| Model Pipeline Stage | Technique / Parameter Applied | Objective |
-| :--- | :--- | :--- |
-| 🧹 **Data Processing** | One-Hot Encoding (Geography/Gender) | Converts qualitative categorizations to binary matrices |
-| ⚖️ **Feature Scaling** | Standard Scaler (`StandardScaler`) | Minimizes feature distance weights across loss steps |
-| 🧠 **Network Structure** | Dense Neural Architecture (Keras Sequential) | Deep multilayer feature mapping |
-| 🚀 **Optimization Engine** | Optuna Automated Trial Search | Scans node metrics to optimize training efficiency |
+> Deep learning model to identify customers likely to churn, helping businesses take proactive retention actions.
 
 ---
 
-## 🔍 Analytical Observations & Evaluation Metrics
+## 📌 Problem Statement
+Customer churn is a costly problem for telecom and banking businesses. Identifying at-risk customers early allows companies to intervene with targeted offers and improve retention.
 
-During evaluation, the deep neural network establishes a concrete prediction baseline across historical records:
+## 🎯 Key Results
+| Task | Technique |
+|------|-----------|
+| Binary Classification | Sequential ANN (Keras) |
+| Preprocessing | StandardScaler, train-test split |
+| Evaluation | Accuracy, Confusion Matrix, Classification Report |
 
-* **📊 Classification Baseline:** The primary testing datasets report a stable **80% overall accuracy baseline** across classification boundaries.
-* **⚠️ Churn Target Nuance:** Due to standard historical imbalances between staying consumers versus leaving segments (a standard characteristic of banking retention ledgers), the model optimizes precision metrics to effectively flags high-risk accounts without triggering costly false-positive alerts.
+## 🛠️ Tech Stack
+- **Language:** Python
+- **Deep Learning:** Keras, TensorFlow
+- **Data Processing:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+
+## 🚀 How to Run
+```bash
+git clone https://github.com/shreesneha056-gif/customer-churn-prediction-ann.git
+cd customer-churn-prediction-ann
+pip install -r requirements.txt
+jupyter notebook
+```
+
+## 📊 Pipeline Overview
+1. EDA & Feature Engineering
+2. Data Preprocessing & Scaling
+3. ANN Model Building (Keras)
+4. Training & Evaluation
+5. Churn Probability Prediction
 
 ---
-
-## 🛠️ Tech Stack & Libraries Used
-* **Deep Learning Framework:** Keras / TensorFlow Core
-* **Hyperparameter Tuning Engine:** Optuna Automation Suite (`optuna-integration`)
-* **Scikit-Learn Integration Wrappers:** Scikeras (`KerasClassifier`)
-* **Data Pipelines & Matrices:** Pandas, NumPy, Scikit-Learn
-* **Visual Representation Layouts:** Matplotlib Engine
-* **IDE Workflow Environments:** VS Code / Jupyter Notebooks
-
----
-
-## 🗂️ Project Repository Structure
-```text
-├── Data/
-│   └── Churn_Modelling.csv             # Raw transactional customer ledger rows
-├── Notebooks/
-│   └── customer_churn_level_ANN.ipynb # Data scaling, tuning trials, and model script
-└── README.md                           # Main structural documentation portfolio
+📫 [LinkedIn](https://www.linkedin.com/in/sneha-shree-mu/) | [Portfolio](https://shreesneha056-gif.github.io/portfolio_website/) | [GitHub](https://github.com/shreesneha056-gif)
