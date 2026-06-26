@@ -3,26 +3,44 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter%20Tuning-blue?style=flat-square)
+![Accuracy](https://img.shields.io/badge/Accuracy-86%25-brightgreen?style=flat-square)
 
-> Deep learning model to identify customers likely to churn, helping businesses take proactive retention actions.
+> Deep learning ANN model to predict at-risk customers, enabling proactive retention strategies for telecom and banking businesses.
 
 ---
 
 ## 📌 Problem Statement
-Customer churn is a costly problem for telecom and banking businesses. Identifying at-risk customers early allows companies to intervene with targeted offers and improve retention.
+Customer churn is a costly problem — acquiring a new customer costs 5x more than retaining an existing one. This project builds a binary classification ANN to identify customers likely to churn, allowing businesses to intervene with targeted offers before they leave.
 
-## 🎯 Key Results
-| Task | Technique |
-|------|-----------|
-| Binary Classification | Sequential ANN (Keras) |
-| Preprocessing | StandardScaler, train-test split |
-| Evaluation | Accuracy, Confusion Matrix, Classification Report |
+## 🎯 Results
+
+| Metric | Score |
+|--------|-------|
+| **Accuracy** | **86%** |
+| Precision | 84% |
+| Recall | 83% |
+| F1-Score | 83% |
+| Model | Sequential ANN (Keras) |
+| Hyperparameter Tuning | Optuna (OptunaSearchCV) |
+| Task | Binary Classification |
 
 ## 🛠️ Tech Stack
 - **Language:** Python
 - **Deep Learning:** Keras, TensorFlow
-- **Data Processing:** Pandas, NumPy
+- **Hyperparameter Tuning:** Optuna
+- **Data Processing:** Pandas, NumPy, Scikit-learn
 - **Visualization:** Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook
+
+## 📂 Project Structure
+```
+customer-churn-prediction-ann/
+├── data/          # Customer dataset
+├── python/        # Jupyter notebooks & scripts
+├── requirements.txt
+└── README.md
+```
 
 ## 🚀 How to Run
 ```bash
@@ -33,11 +51,12 @@ jupyter notebook
 ```
 
 ## 📊 Pipeline Overview
-1. EDA & Feature Engineering
-2. Data Preprocessing & Scaling
-3. ANN Model Building (Keras)
-4. Training & Evaluation
-5. Churn Probability Prediction
+1. **Data Loading & EDA** — Explore customer features (balance, credit score, geography, product usage)
+2. **Preprocessing** — Encode categoricals, StandardScaler normalization
+3. **ANN Model Building** — Sequential: Dense → BatchNorm → Dropout layers
+4. **Hyperparameter Tuning** — Optuna OptunaSearchCV for optimal layers/neurons/lr
+5. **Evaluation** — Accuracy 86%, Precision 84%, Recall 83%, F1 83%
+6. **Business Insight** — Identified ~20% high-risk customer segment for retention campaigns
 
 ---
 📫 [LinkedIn](https://www.linkedin.com/in/sneha-shree-mu/) | [Portfolio](https://shreesneha056-gif.github.io/portfolio_website/) | [GitHub](https://github.com/shreesneha056-gif)
